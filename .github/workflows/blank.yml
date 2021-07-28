@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Setup .Net 4.5
+name: Setup msbuild
 
 # Controls when the workflow will run
 on:
@@ -16,7 +16,6 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Add msbuild to PATH
         uses: microsoft/setup-msbuild@v1.0.2
           
