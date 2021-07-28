@@ -22,3 +22,7 @@ jobs:
         with:
           VERSION_MAJOR: '4'
           VERSION_MINOR: '5'
+          
+      - name: Check msbuild.exe
+        run: where msbuild
+        shell: cmd
