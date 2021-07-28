@@ -1,0 +1,24 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Setup .Net 4.5
+
+# Controls when the workflow will run
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  setup:
+    # The type of runner that the job will run on
+    runs-on: windows-2016
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - Name: Setup .Net 4.5
+        uses: Elskom/setup-latest-dotnet@main
+        with:
+          VERSION_MAJOR: '4'
+          VERSION_MINOR: '5'
